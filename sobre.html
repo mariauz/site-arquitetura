@@ -1,65 +1,175 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Sobre</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - ArqStudio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>ArqStudio</h2>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="sobre.html" class="nav-link active">Sobre</a>
+                    <a href="projetos.html" class="nav-link">Projetos</a>
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </div>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-<header class="header">
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h1>Sobre o ArqStudio</h1>
+                    <p class="lead">Somos um escritório de arquitetura dedicado a criar espaços únicos que transformam a maneira como as pessoas vivem e trabalham.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="container header-content">
+    <!-- About Main -->
+    <section class="about-main">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image slide-in-left">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Arquiteto">
+                </div>
+                <div class="about-info slide-in-right">
+                    <h2>Nossa História</h2>
+                    <p>Fundado em 2015, o ArqStudio nasceu da paixão por criar espaços que inspiram e transformam. Com mais de 8 anos de experiência no mercado, desenvolvemos uma abordagem única que combina design inovador, funcionalidade inteligente e sustentabilidade.</p>
+                    
+                    <p>Nossa equipe multidisciplinar trabalha em estreita colaboração com cada cliente, entendendo suas necessidades específicas e transformando visões em realidade através de projetos arquitetônicos excepcionais.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>150+</h3>
+                            <p>Projetos Concluídos</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>8</h3>
+                            <p>Anos de Experiência</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>98%</h3>
+                            <p>Clientes Satisfeitos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="logo">Nome do Arquiteto</div>
+    <!-- Values Section -->
+    <section class="values">
+        <div class="container">
+            <h2 class="section-title">Nossos Diferenciais</h2>
+            <div class="values-grid">
+                <div class="value-card slide-up">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Inovação</h3>
+                    <p>Utilizamos as mais modernas tecnologias e tendências em design para criar projetos únicos e contemporâneos.</p>
+                </div>
+                <div class="value-card slide-up">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Comprometidos com o meio ambiente, incorporamos soluções sustentáveis em todos os nossos projetos.</p>
+                </div>
+                <div class="value-card slide-up">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Personalização</h3>
+                    <p>Cada projeto é único e desenvolvido sob medida para atender às necessidades específicas de cada cliente.</p>
+                </div>
+                <div class="value-card slide-up">
+                    <div class="value-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Excelência</h3>
+                    <p>Buscamos a perfeição em cada detalhe, desde o conceito inicial até a entrega final do projeto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<nav class="main-nav">
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title">Nossa Filosofia</h2>
+            <div class="philosophy-content slide-up">
+                <p class="philosophy-text">
+                    "Acreditamos que a arquitetura vai além de construir estruturas – é sobre criar experiências. Cada projeto é uma oportunidade de melhorar a qualidade de vida das pessoas, respeitando o meio ambiente e valorizando a funcionalidade sem abrir mão da beleza."
+                </p>
+                <div class="philosophy-author">
+                    <h4>Marina Silva</h4>
+                    <p>Arquiteta Principal e Fundadora</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<ul>
-<li><a href="index.html">Início</a></li>
-<li><a href="sobre.html">Sobre</a></li>
-<li><a href="projetos.html">Projetos</a></li>
-<li><a href="contato.html">Contato</a></li>
-</ul>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-</nav>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ArqStudio</h3>
+                    <p>Transformando ideias em realidade através da arquitetura excepcional.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
+                        <p><i class="fas fa-envelope"></i> contato@arqstudio.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ArqStudio. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-</div>
-
-</header>
-
-
-<section>
-
-<div class="container">
-
-<h2 class="section-title">Sobre</h2>
-
-<p>
-
-Aqui você pode colocar a história do arquiteto,
-formação, experiência e estilo de trabalho.
-
-</p>
-
-</div>
-
-</section>
-
-
-<footer class="footer">
-
-<p>© 2026 Escritório de Arquitetura</p>
-
-</footer>
-
+    <script src="js/script.js"></script>
 </body>
-
 </html>
