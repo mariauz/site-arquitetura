@@ -1,66 +1,244 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Projetos</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - ArqStudio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>ArqStudio</h2>
+                </div>
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="sobre.html" class="nav-link">Sobre</a>
+                    <a href="projetos.html" class="nav-link active">Projetos</a>
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </div>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-<header class="header">
+    <!-- Projects Hero -->
+    <section class="projects-hero">
+        <div class="container">
+            <div class="projects-content fade-in">
+                <h1>Nossos Projetos</h1>
+                <p>Explore nossa coleção de projetos arquitetônicos que combinam design inovador com funcionalidade excepcional.</p>
+            </div>
+        </div>
+    </section>
 
-<div class="container header-content">
+    <!-- Projects Filter -->
+    <section class="projects-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="residencial">Residencial</button>
+                <button class="filter-btn" data-filter="comercial">Comercial</button>
+                <button class="filter-btn" data-filter="interiores">Interiores</button>
+            </div>
+        </div>
+    </section>
 
-<div class="logo">Nome do Arquiteto</div>
+    <!-- Projects Gallery -->
+    <section class="projects-gallery">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Projeto 1 -->
+                <div class="project-item slide-up" data-category="residencial">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Casa Moderna Vista">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Casa Moderna Vista</h3>
+                                <p>Residencial • 2023</p>
+                                <span class="project-details">350m² • São Paulo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<nav class="main-nav">
+                <!-- Projeto 2 -->
+                <div class="project-item slide-up" data-category="comercial">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Torre Corporativa">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Torre Corporativa</h3>
+                                <p>Comercial • 2023</p>
+                                <span class="project-details">2.500m² • São Paulo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<ul>
-<li><a href="index.html">Início</a></li>
-<li><a href="sobre.html">Sobre</a></li>
-<li><a href="projetos.html">Projetos</a></li>
-<li><a href="contato.html">Contato</a></li>
-</ul>
+                <!-- Projeto 3 -->
+                <div class="project-item slide-up" data-category="interiores">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Loft Minimalista">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Loft Minimalista</h3>
+                                <p>Interiores • 2022</p>
+                                <span class="project-details">120m² • São Paulo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-</nav>
+                <!-- Projeto 4 -->
+                <div class="project-item slide-up" data-category="residencial">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Casa Sustentável">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Casa Sustentável</h3>
+                                <p>Residencial • 2022</p>
+                                <span class="project-details">280m² • Campinas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-</div>
+                <!-- Projeto 5 -->
+                <div class="project-item slide-up" data-category="comercial">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Centro Empresarial">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Centro Empresarial</h3>
+                                <p>Comercial • 2022</p>
+                                <span class="project-details">1.800m² • Guarulhos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-</header>
+                <!-- Projeto 6 -->
+                <div class="project-item slide-up" data-category="interiores">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Escritório Moderno">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Escritório Moderno</h3>
+                                <p>Interiores • 2023</p>
+                                <span class="project-details">200m² • São Paulo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Projeto 7 -->
+                <div class="project-item slide-up" data-category="residencial">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Villa Contemporânea">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Villa Contemporânea</h3>
+                                <p>Residencial • 2021</p>
+                                <span class="project-details">450m² • Alphaville</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<section>
+                <!-- Projeto 8 -->
+                <div class="project-item slide-up" data-category="comercial">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Shopping Center">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Shopping Center</h3>
+                                <p>Comercial • 2021</p>
+                                <span class="project-details">5.000m² • Santos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<div class="container">
+                <!-- Projeto 9 -->
+                <div class="project-item slide-up" data-category="interiores">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Restaurante Gourmet">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Restaurante Gourmet</h3>
+                                <p>Interiores • 2023</p>
+                                <span class="project-details">150m² • São Paulo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h2 class="section-title">Projetos</h2>
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content slide-up">
+                <h2>Pronto para Transformar Seu Espaço?</h2>
+                <p>Entre em contato conosco e vamos criar algo incrível juntos.</p>
+                <a href="contato.html" class="btn-primary">Começar Projeto</a>
+            </div>
+        </div>
+    </section>
 
-<div class="grid">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5511999999999" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-<img src="images/projeto1.jpg">
-<img src="images/projeto2.jpg">
-<img src="images/projeto3.jpg">
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ArqStudio</h3>
+                    <p>Transformando ideias em realidade através da arquitetura excepcional.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
+                        <p><i class="fas fa-envelope"></i> contato@arqstudio.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ArqStudio. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-</div>
-
-</div>
-
-</section>
-
-
-<footer class="footer">
-
-<p>© 2026 Escritório de Arquitetura</p>
-
-</footer>
-
+    <script src="js/script.js"></script>
 </body>
-
 </html>
